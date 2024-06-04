@@ -27,4 +27,4 @@ jobs:
           app-name: 'KJTech-CRad-Workflows'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D35251B7781948049BE8D0188F35AF3F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C87FB4E0CBAE42289C2BB28184EFD738 }}

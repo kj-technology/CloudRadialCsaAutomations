@@ -113,7 +113,7 @@ if ($resultCode -Eq 200) {
         $resultCode = 500
     }
 
-    $GroupObject = New-MgGroup -DisplayName $GroupName -Description $GroupDescription -MailEnabled:$True -MailNickname $GroupName
+    $GroupObject = New-MgGroup -DisplayName $GroupName -Description $GroupDescription -MailEnabled:$True -MailNickname $GroupName -SecurityEnabled:$True
 
     if (-Not $GroupObject) {
         $message = "Request failed. Could not create group `"$GroupName`"."

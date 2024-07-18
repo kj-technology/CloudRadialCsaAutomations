@@ -106,7 +106,7 @@ if ($resultCode -Eq 200)
 
     Connect-MgGraph -ClientSecretCredential $credential365 -TenantId $TenantId
 
-    $GroupObject = Get-MgGroup -Filter "displayName eq '$GroupName'"
+    $GroupObject = Get-MgGroup -Filter "displayName eq '$GroupName'" -GroupTypes @("Unified")
 
     Write-Host $GroupObject.DisplayName
     Write-Host $GroupObject.Id
